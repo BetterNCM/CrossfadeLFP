@@ -12,5 +12,6 @@
         ]
     },
     "requirements":["LibFrontendPlay"],
-    "preview":"preview.png"
+    "preview":"preview.png",
+    "manifest_version": 1
 }
