@@ -56,7 +56,7 @@ plugin.onAllPluginsLoaded(() => {
         setInterval(() => {
             const currentPlayer = loadedPlugins.LibFrontendPlay.currentAudioPlayer;
             const previousPlayer = loadedPlugins.LibFrontendPlay.previousAudioPlayer;
-            const currentPlayerTime = currentPlayer.currentTime ?? 0;
+            const currentPlayerTime = currentPlayer?.currentTime ?? 0;
             if (status === 'none' && currentPlayerTime > currentPlayer.duration - crossfadeTime - loadTime) {
                 status = 'loading';
                 switchToNext();
